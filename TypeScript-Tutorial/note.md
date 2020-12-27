@@ -8,3 +8,6 @@
 
 **Intall Typescript**
 `npm install -g typescript`
+
+## Compiling TypeScript
+`tsc <file-name.ts> -w`

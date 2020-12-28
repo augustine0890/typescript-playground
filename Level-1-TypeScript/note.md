@@ -8,3 +8,6 @@
 - Running Parcel
 `parcel <file-name>.html`
 `npm init`
+
+- Compile time with Parcel
+`npm install --save-dev parcel-plugin-typescript parcel-bundler@1.12.4`

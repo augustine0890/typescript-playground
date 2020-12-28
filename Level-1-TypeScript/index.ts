@@ -12,7 +12,7 @@ console.log(me);
 enum Job { 
     SW, 
     Backend, 
-    DE
+    DE,
 }
 
 const job: Job = Job.SW;

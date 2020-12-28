@@ -28,6 +28,7 @@ node_modules
 
 # Debug log from npm
 npm-debug.log
+package-lock.json
 
 
 ### https://raw.github.com/github/gitignore/608690d6b9a78c2a003affc792e49a84905b3118/Global/JetBrains.gitignore
@@ -164,7 +165,7 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 
-
+# parcel-bundler cache (https://parceljs.org/)
 /lib
-/.cache/
-/dist/
+.cache/
+dist

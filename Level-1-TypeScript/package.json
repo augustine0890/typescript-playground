@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  },
+  "name": "level-1-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {},
+  "scripts": {
+    "start": "parcel index.html" 
+  },
+  "author": "augustine",
+  "license": "ISC",
+  "description": ""
+}

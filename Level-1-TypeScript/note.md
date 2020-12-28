@@ -10,4 +10,4 @@
 `npm init`
 
 - Compile time with Parcel
-`npm install --save-dev parcel-plugin-typescript parcel-bundler@1.12.4`
+`npm install --save-dev parcel-plugin-typescript parcel-bundler@1.9.1`

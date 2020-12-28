@@ -20,3 +20,12 @@ const job: Job = Job.SW;
 const phone: any = "Anything";
 const tablet: any = 1;
 
+// Functions in TypeScript
+
+const sayWord = (word: string): string => {
+    console.log(word);
+    return word;
+}
+
+sayWord('augustine');
+// sayWord(3);

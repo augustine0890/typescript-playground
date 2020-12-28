@@ -1,0 +1,16 @@
+{
+  "name": "typescript-quickly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "author": "augustine",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.9.1",
+    "parcel-plugin-typescript": "^1.0.0",
+    "typescript": "^4.1.3"
+  }
+}

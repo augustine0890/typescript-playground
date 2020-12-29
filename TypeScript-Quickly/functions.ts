@@ -112,5 +112,5 @@ function doSleuthing(numberOfClues:number, clue1:string, clue2:string, suspect1:
 }
   
 let answer: string;
-answer=doSleuthing(2, 'The parrot heard everything!', 'All the doors and windows were shut from the INSIDE.', 'Burglar Bob', 'Saint Sam')
+answer = doSleuthing(2, 'The parrot heard everything!', 'All the doors and windows were shut from the INSIDE.', 'Burglar Bob', 'Saint Sam')
 console.log('The culprit was none other than ', answer, '!');

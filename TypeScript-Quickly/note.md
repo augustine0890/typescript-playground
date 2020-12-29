@@ -58,7 +58,22 @@ TS -compile-> JS -bundle-> JS (main.js) -deploy-> JS engine (main.js)
 - Use special tags within the comment to highlight certain aspects of the function.
 - Can use `@param` to describle each of the function's parameters, and `@return` to describe what the function returns.
 
+## Complex Types
+**Array Type Annotations**
+- Put `[]` after the element type. An alternative method is use `Array<T>` syntax, where `T` stands for the type.
+- Multidimensinal arrays: arrays of arrays
+- In TS, when an array is typed with elements of specific types, it’s called a `tuple`.
+- But despite their similarities, tuples and arrays do not have compatible types within TS. Specifically, we can’t assign an array to a tuple variable, even when the elements are of the correct type.
+- The whole point of tuples is that they have fixed lengths.
 
+**Array Type Inference**
+- Type inference returns arrays. When you want tuples, you need to use explicit type annotations.
+
+**Rest parameters**
+- The rest parameter syntax allows us to represent an indefinite number of arguments as an array.
+
+**Spread Syntax (...)**
+- Spread syntax allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.
 
 
 **The union type**

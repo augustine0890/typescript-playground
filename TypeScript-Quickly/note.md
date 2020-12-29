@@ -21,6 +21,7 @@
 - Errors are caught by the TypeScript static code analyzer as you type, even before you compile code with the Typescript compiler (tsc).
 
 TS -compile-> JS -bundle-> JS (main.js) -deploy-> JS engine (main.js)
+
 - _Bundle_: the process of combining serveral script files into one.
 
 - _Node_: JS run-time enviroment
@@ -30,3 +31,18 @@ TS -compile-> JS -bundle-> JS (main.js) -deploy-> JS engine (main.js)
 
 - Start a new TypeScript project
 `tsc --init`
+
+## Basic Types
+- If you declare a variable without initializing it with a specific value, TypeScript uses the internal types `null` or `undefined`.
+
+**Type Inferences**
+- Declare a variable with a initial value, the variable can never be reassigned a value of a different data type.
+- _Primitive_ data types: boolean, number, null, string, undefined
+- Variable in declared without being assigned an initial value --> TS will consider a variable to be of type `any`.
+- Variables of type `any` can be assigned to `any` value and TS won't give a error if they're reassigned to a different type later on.
+
+**Type Annotations**
+- Type declarations: add after their names by appending a variable with a colon `:` and the type.
+
+**The union type**
+- Unions allow you to express that a value can be of several types.

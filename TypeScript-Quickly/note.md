@@ -44,5 +44,22 @@ TS -compile-> JS -bundle-> JS (main.js) -deploy-> JS engine (main.js)
 **Type Annotations**
 - Type declarations: add after their names by appending a variable with a colon `:` and the type.
 
+## Functions
+- Functions parameters may be given type annotations.
+- Parameters aren't provide type annatations for are assumed to be of type `any`.
+
+**Optional Parameters**
+- To indicate a parameter is intentionally optional -> add `?` after its name. This tells TS that the parameter is allowed to be `undefined`.
+
+**Void Return Type**
+- If function is not return value then return type as `void`
+
+**Documenting Functions**
+- Use special tags within the comment to highlight certain aspects of the function.
+- Can use `@param` to describle each of the function's parameters, and `@return` to describe what the function returns.
+
+
+
+
 **The union type**
 - Unions allow you to express that a value can be of several types.

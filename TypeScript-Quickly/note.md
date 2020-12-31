@@ -83,5 +83,9 @@ TS -compile-> JS -bundle-> JS (main.js) -deploy-> JS engine (main.js)
 **Generic Types**
 - The array type syntax `Array<T>`? This is generic because we can substitute any type (either pre-defined or custom) in the place of T. For example `Array<string>` is an array of strings.
 - Writing generic functions with function `functionName<T>` allows us to use `T` within the type annotation as a type placeholder. Later, when the function is invoked, `T` is replaced with the provided type.
-**The union type**
-- Unions allow you to express that a value can be of several types.
+
+## Union Types
+- Unions allow you to express that a value can be of several types by combining two types with a vertical bar character `|`.
+- Type narrowing is when TS can figure out what type a variable can be at a given point in our code.
+- We can use unions to allow arrays to have multiple types of values.
+- We can define states within our program by using literal types and unions.

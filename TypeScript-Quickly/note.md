@@ -89,3 +89,8 @@ TS -compile-> JS -bundle-> JS (main.js) -deploy-> JS engine (main.js)
 - Type narrowing is when TS can figure out what type a variable can be at a given point in our code.
 - We can use unions to allow arrays to have multiple types of values.
 - We can define states within our program by using literal types and unions.
+
+## Type Narrowing
+- TS can narrow a type is with a conditional statement that checks if a variable is a specific type.
+- The `typeof` operator is useful when writing type guards. It can check if a variable is a `'string'`, `'number'`, `'boolean'`, or `'symbol'`.
+- The `in` operator is useful for checking if a specific property exists on an object. `in` is especially helpful when we have data represented as objects.

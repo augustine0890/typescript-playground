@@ -1,17 +1,17 @@
 # Typescript Playground
 
 - Starting a new project<br>
-`yarn init`
+    - `yarn init`
 
 - Adding a dependency<br>
-`yarn add [package]`
-`yarn add [package]@[verions]`
-`yarn add [package]@[tag]`
+    - `yarn add [package]`
+    - `yarn add [package]@[verions]`
+    - `yarn add [package]@[tag]`
 
 - Adding a dependency to different categories. Add to `devDependencies`, `peerDependencies`, and `optionalDependencies` respectively:<br>
-`yarn add [package] --dev`
-`yarn add [package] --peer`
-`yarn add [package] --optional`
+    - `yarn add [package] --dev`
+    - `yarn add [package] --peer`
+    - `yarn add [package] --optional`
 
 - Upgrading a dependency<br>
 `yarn upgrade [package]`

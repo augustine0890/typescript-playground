@@ -20,3 +20,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Stop running containers
     - `docker stop CONTAINER`
 - Once the container has stopped, you can remove it by using the `docker rm` command.
+- Remove images
+    - `--force , -f`: force removal of the image
+    - `docker rmi IMAGE`                                                        b

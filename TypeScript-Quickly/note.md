@@ -1,21 +1,24 @@
 # TypeScript Quickly
 
 - Installing
-`npm install typescript --save-dev`
-`npm install parcel-bundler@1.9.1 --save-dev`
+    - `npm install typescript --save-dev`
+    - `npm install parcel-bundler@1.9.1 --save-dev`
 
 - Locally in your project.
-`npm install -D typescript`
-`npm install -D ts-node`
+    - `npm install -D typescript`
+    - `npm install -D ts-node`
+    - `npm i -D nodemon`
+    - `npm i -D concurrently`
+
 - Or globally with TypeScript.
-`npm install -g typescript`
-`npm install -g ts-node`
+    - `npm install -g typescript`
+    - `npm install -g ts-node`
 
 ## Getting familiar with TypeScript
 
 **Why program in TypeScript**
 - TypeScipt is compile-to-JavaScript language. A program written in TypeScript has to be transpiled into JS first, and then it can be executed in the browser or a standalone JS engine.
-- Complier: a program that takes source code written in one language and produce a output file in in some other language. (C cod --> binary executable (machine code)).
+- Complier: a program that takes source code written in one language and produce a output file in in some other language. (C code --> binary executable (machine code)).
 - Transpilers: are also known as source-to-source. Take in a source code file and convert it to another source code file in some other language or a different version of the same language. This output still has to through a compiler or interpreter to be able to run on the machine.
 - JS may have hidden type-related bugs and other problems that will be revealed only after your JS code is complied.
 - Errors are caught by the TypeScript static code analyzer as you type, even before you compile code with the Typescript compiler (tsc).
@@ -94,3 +97,7 @@ TS -compile-> JS -bundle-> JS (main.js) -deploy-> JS engine (main.js)
 - TS can narrow a type is with a conditional statement that checks if a variable is a specific type.
 - The `typeof` operator is useful when writing type guards. It can check if a variable is a `'string'`, `'number'`, `'boolean'`, or `'symbol'`.
 - The `in` operator is useful for checking if a specific property exists on an object. `in` is especially helpful when we have data represented as objects.
+
+## Advanced Object Types
+- Use the `interface` keyword followed by the interface name and the typed object.
+- The biggest difference between `interface` and `type` is that `interface` can only be used to type objects, while `type` can be used to type objects, primitives, and more.

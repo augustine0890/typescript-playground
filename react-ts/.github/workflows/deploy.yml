@@ -1,0 +1,23 @@
+name: Deploy to Github
+
+on:
+  push:
+    branches:
+      - master
+      - dev
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Check out a copy of your repository on the ubuntu-latest machine
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Run the Docker test action
+      - name: Docker Test
+        run: docker build . --file Dockerfile
+      # - name: Test
+        # run: yarn test
